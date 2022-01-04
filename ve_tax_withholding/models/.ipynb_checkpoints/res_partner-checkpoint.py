@@ -6,16 +6,15 @@ class ResPartner(models.Model):
     
     _inherit = 'res.partner' 
     
+    partner_type_custom = fields.Selection([('PNR','Persona Natural Residente'),
+                                            ('PNNR','Persona Natural No Residente'), 
+                                            ('PJD','Persona Juridica Dominciliada'), 
+                                            ('PJDN','Persona Juridica No Domicialda'), 
+                                            ('PJNCD','Persona Juridica No Costituida Domicilada')],
+
+                                             string='partner custom', store=True, )
     
-    partner_type_custom = fields.Selection([('PND', 'PND'),('PJD','PJD')], string='partner custom', store=True, )
     
-    @api.onchange('is_company')
-    def _partner_type(self):
-        for partner in self:
-            if partner.is_company:
-                self.partner_type_custom = 'PJD'
-            else:
-                self.partner_type_custom = 'PND'
             
     
 
