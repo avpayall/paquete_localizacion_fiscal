@@ -4,3 +4,4 @@ from . import withholding_subject
 from . import account_move
 from . import tax_withholding_voucher_customer
 from . import res_partner
+from . import tributary_unit

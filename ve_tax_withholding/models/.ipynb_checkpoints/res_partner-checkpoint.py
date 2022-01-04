@@ -6,12 +6,12 @@ class ResPartner(models.Model):
     
     _inherit = 'res.partner' 
     
-    partner_type_custom = fields.Selection(string='partner custom', [('PNR','Persona Natural Residente'),
+    partner_type_custom = fields.Selection([('PNR','Persona Natural Residente'),
                                             ('PNNR','Persona Natural No Residente'), 
                                             ('PJD','Persona Juridica Dominciliada'), 
                                             ('PJDN','Persona Juridica No Domicialda'), 
                                             ('PJNCD','Persona Juridica No Costituida Domicilada')],
-                                           store=True, )
+                                           string='partner custom', store=True, )
     
     
             
