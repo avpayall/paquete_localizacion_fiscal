@@ -11,7 +11,7 @@ class ResPartner(models.Model):
                                             ('PJD','Persona Juridica Dominciliada'), 
                                             ('PJDN','Persona Juridica No Domicialda'), 
                                             ('PJNCD','Persona Juridica No Costituida Domicilada')],
-                                           string='partner custom', store=True, )
+                                           string='Tipo de persona fiscal', store=True, )
     
     
             

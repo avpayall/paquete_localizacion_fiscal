@@ -9,5 +9,10 @@ class WithholdingSubject( models.Model):
     code = fields.Char( string = 'Código', required = True)
     notes = fields.Text( string = 'Notas internas')
     active = fields.Boolean( string = 'Active', default = True)
-    partner_type = fields.Selection(string = 'Tipo de persona a que aplica', comodel_name='res.partner', related='partner_type_custom')
+    partner_type_custom = fields.Selection([('PNR','Persona Natural Residente'),
+                                            ('PNNR','Persona Natural No Residente'), 
+                                            ('PJD','Persona Juridica Dominciliada'), 
+                                            ('PJDN','Persona Juridica No Domiciliada'), 
+                                            ('PJNCD','Persona Juridica No Constituida Domiciliada')],
+                                           string='Tipo de persona a que aplica', store=True, )
     
