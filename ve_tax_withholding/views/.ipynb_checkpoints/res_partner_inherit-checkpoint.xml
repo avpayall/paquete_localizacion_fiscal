@@ -5,11 +5,21 @@
             <field name="name">res.partner.form.inherit</field>
             <field name="model">res.partner</field>
             <field name="inherit_id" ref="base.view_partner_form" />
-            <field name="arch" type="xml">
+            <field name="arch" type="xml"> 
 
                 <xpath expr="//field[@name='company_type']" position="after">
                     <field name="partner_type_custom"/>
-                </xpath>
+                </xpath> 
+                <notebook>
+                     <page string="Retención" >
+                         <group>
+                              <field name="partner_type_custom"/>
+                         </group>
+                         <group>
+                             
+                         </group>                        
+                     </page>
+                </notebook>
 
             </field>
         </record>
