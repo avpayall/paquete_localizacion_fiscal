@@ -8,7 +8,7 @@
             <field name="arch" type="xml"> 
 
                 <xpath expr="//field[@name='company_type']" position="after">
-                    <field name="partner_type_custom"/>
+                   <!--<field name="partner_type_custom"/>-->
                 </xpath> 
                 <notebook>
                      <page string="Retención" >
