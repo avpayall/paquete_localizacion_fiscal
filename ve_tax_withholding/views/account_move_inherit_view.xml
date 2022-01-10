@@ -8,7 +8,7 @@
             <field name="arch" type="xml">
                 <xpath expr="//field[@name='payment_reference']" position="after"> <field name="control_number" /> </xpath>
                 <xpath expr="//div[@class='oe_button_box']" position="inside">
-                    <button string="Retenciones" name="%(tax_withholding_form)d" type="action" class="oe_stat_button" icon="fa-dollar">
+                    <button string="Retenciones" name="tax_withholding_form" type="action" class="oe_stat_button" icon="fa-dollar">
                     </button>
                 </xpath>
             </field>
