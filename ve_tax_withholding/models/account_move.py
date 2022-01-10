@@ -5,7 +5,7 @@ class AccountMove( models.Model):
     control_number = fields.Char(string='Numero de control', required=True, default='00')
     
     @api.model
-    def withholdings(self):
+    def withholdings(self, arg):
     	view_id = self.env.ref('tax.withholding_voucher_vendor.tax_withholding_form').id
     	context = self._context.copy()
     	return {
