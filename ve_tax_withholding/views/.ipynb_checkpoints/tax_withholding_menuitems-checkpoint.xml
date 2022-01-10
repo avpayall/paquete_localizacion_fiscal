@@ -33,6 +33,6 @@
         <menuitem id="tax_withholding_menu_subjects_conceptos" name="Conceptos de Retencion" parent="tax_withholding_subject_menu" sequence="3" action="tax_withholding_subject_vendor_list_action"/>         
         <menuitem id="purchases_book_menu" name="Libro de Compras" parent="account_reports.account_reports_partners_reports_menu" action="purchases_book_list_action" sequence="30" />
         <menuitem id="sales_book_menu" name="Libro de Ventas" parent="account_reports.account_reports_partners_reports_menu" action="sales_book_list_action" sequence="31" />
-        <menuitem id="menu_tributary_unit" name="Unidad Tributaria" parent="account.menu_finance_configuration" sequence="2"  action="tributary_unit_list_action"/>
+        <menuitem id="menu_tributary_unit" name="Unidad Tributaria" parent="account.menu_finance_configuration" sequence="4"  action="tributary_unit_list_action"/>
     </data>
 </odoo>
