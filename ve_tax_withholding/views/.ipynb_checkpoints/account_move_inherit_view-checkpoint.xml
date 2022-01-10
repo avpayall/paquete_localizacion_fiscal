@@ -7,6 +7,10 @@
             <field name="inherit_id" ref="account.view_move_form" />
             <field name="arch" type="xml">
                 <xpath expr="//field[@name='payment_reference']" position="after"> <field name="control_number" /> </xpath>
+                <xpath expr="//div[@class='oe_button_box']" position="inside">
+                    <button name="toggle_active" type="object" class="oe_stat_button" icon="fa-archive">
+                    </button>
+                </xpath>
             </field>
         </record>
     </data>
