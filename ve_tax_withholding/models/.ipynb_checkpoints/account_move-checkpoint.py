@@ -6,7 +6,7 @@ class AccountMove( models.Model):
     
     @api.model
     def withholdings(self, arg):
-    	view_id = self.env.ref('tax.withholding_voucher_vendor.tax_withholding_form').id
+    	view_id = self.env.ref('tax_withholding_form').id
     	context = self._context.copy()
     	return {
             'name':'form_name',
