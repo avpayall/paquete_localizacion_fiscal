@@ -35,6 +35,7 @@
         "views/tax_withholding_menuitems.xml",
         "views/account_move_inherit_view.xml",
         "views/res_partner_inherit.xml",
+        "views/tributary_unit.xml",
     ],
     
     'demo': [
