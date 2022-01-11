@@ -38,6 +38,6 @@
         <menuitem id="purchases_book_menu" name="Libro de Compras" parent="account_reports.account_reports_partners_reports_menu" action="purchases_book_list_action" sequence="30" />
         
         
-        <menuitem id="menu_tributary_unit" name="Unidad Tributaria" parent="account.account_account_menu" sequence="8" action="tributary_unit_list_action"/>
+        <menuitem id="menu_tributary_unit" name="Unidad Tributaria" parent="account.account_account_menu" sequence="3" action="tributary_unit_list_action"/>
     </data>
 </odoo>
