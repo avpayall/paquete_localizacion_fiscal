@@ -8,5 +8,5 @@ class TributaryUnit(models.Model):
     
     unit = fields.Float(string='Unidad Tributaria', required = True, store= True)
     factor = fields.Float(string='Factor Fiscal', required = True, store= True)
-    minimmun = fields.Float(string='Minimo', store= True)
+    minimun = fields.Float(string='Minimo', store= True)
     
