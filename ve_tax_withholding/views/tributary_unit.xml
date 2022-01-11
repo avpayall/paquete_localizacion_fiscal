@@ -14,7 +14,6 @@
                                 <field name="minimum"/>
                             </group>
                         </group>
-                        <notebook> <page string="Internal Notes"> <field name="notes"/> </page> </notebook>
                     </sheet>
                 </form>
             </field>
