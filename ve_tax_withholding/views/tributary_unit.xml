@@ -23,7 +23,13 @@
         <record model="ir.ui.view" id="tributary_unit_list">
             <field name="name">tributary.unit.list</field>
             <field name="model">tax.tributary_unit</field>
-            <field name="arch" type="xml"> <tree string="Tributary Unit List"> <field name="unit"/> <field name="factor"/> <field name="minimmum"/> </tree> </field>
+            <field name="arch" type="xml"> 
+                <tree string="Tributary Unit List"> 
+                    <field name="unit"/>
+                    <field name="factor"/> 
+                    <field name="minimmum"/> 
+                </tree> 
+            </field>
         </record>
         
         <record model="ir.ui.view" id="tributary_unit_search">
