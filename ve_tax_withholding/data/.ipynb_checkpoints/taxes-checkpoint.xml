@@ -3,7 +3,7 @@
     <data noupdate="1">
     <!-- Account Taxes -->
         <record id="tax0sale" model="account.tax.template">
-            <field name="chart_template_id" ref="account.tax.template"/>
+            <field name="chart_template_id" ref="account.model_account_tax_template"/>
             <field name="name">Exento (ventas)</field>
             <field name="description">Exento (ventas)</field>
             <field name="amount">0</field>
