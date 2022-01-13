@@ -7,8 +7,9 @@
             <field name="arch" type="xml">
                 <form string="Tributary Unit Form">
                     <sheet>
-                        <h1> <field name="unit"/></h1>
                         <group>
+                        <h1> <field name="unit"/></h1>
+                        
                             <group> 
                                 <field name="factor"/>
                                 <field name="minimum"/>
@@ -34,7 +35,9 @@
         <record model="ir.ui.view" id="tributary_unit_search">
             <field name="name">tributary.unit.search</field>
             <field name="model">tax.tributary_unit</field>
-            <field name="arch" type="xml"> <search> <field name="unit"/> <field name="factor"/> <field name="minimum"/> </search> </field>
+            <field name="arch" type="xml"> <search> 
+            <field name="unit"/> <field name="factor"/> 
+            <field name="minimum"/> </search> </field>
         </record>
       
         <record id="seq_tributary_unit" model="ir.sequence">
