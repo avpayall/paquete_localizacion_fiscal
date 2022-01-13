@@ -10,7 +10,7 @@ class TributaryUnit(models.Model):
     #factor = fields.Float(string='Factor Fiscal', required = True, store= True)
     minimum = fields.Float(string='Minimo',default=lambda self:self._compute_minimum(), store= True) 
     
-    @api.onchage('unit','factor')
+    @api.onchange('unit','factor')
     def _compute_minimu(self):
         self.minimum = self.unit*self.factos
     
