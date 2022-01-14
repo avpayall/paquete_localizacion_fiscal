@@ -12,7 +12,8 @@ class TributaryUnit(models.Model):
     
     @api.onchange('unit','factor')
     def _compute_minimu(self):
-        self.minimum = self.unit*self.factor
+        for record in self:
+        record.minimum = record.unit * record.factor
     
     
     
