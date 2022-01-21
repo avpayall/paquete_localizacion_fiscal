@@ -11,7 +11,7 @@ class TributaryUnit(models.Model):
     minimum = fields.Float(string='Minimo',default=lambda self:self._compute_minimum(), store= True) 
     
     @api.onchange('unit','factor')
-    def _compute_minimu(self):
+    def _compute_minimum(self):
         for record in self:
             record.minimum = record.unit * record.factor
     
