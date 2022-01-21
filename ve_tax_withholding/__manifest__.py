@@ -25,6 +25,12 @@
         "security/tax_withholding_security.xml",
         "security/ir.model.access.csv",
         "data/withholding_subjects_data.xml",
+        "data/account_chart_template.xml",
+        "data/account_type_template.xml",
+        "data/res_groups_demo.xml",
+        "data/tax_chart_template.xml",
+        "data/tax_groups.xml",
+        "data/taxes.xml",
         "report/tax_withholding_report.xml",
         "report/tax_withholding_customer_report.xml",
         "report/tax_book_excel_report.xml",
@@ -36,6 +42,8 @@
         "views/account_move_inherit_view.xml",
         "views/res_partner_inherit.xml",
         "views/tributary_unit.xml",
+        
+
     ],
     
     'demo': [
