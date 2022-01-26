@@ -1,13 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  <data>
-    <record id="ve_chart_template_amd" model="account.chart.template">
-        <field name="name">Venezuelan - Account</field>
-        <field name="bank_account_code_prefix">1113</field>
-        <field name="cash_account_code_prefix">1111</field>
-        <field name="transfer_account_code_prefix">1129003</field>
-        <field name="code_digits">7</field>
-        <field name="currency_id" ref="base.VEF"/>
-    </record>
-  </data>
+    <data noupdate="1">
+    <!-- Account Taxes -->
+        <record id="tax0sale" model="account.tax.template">
+            <field name="chart_template_id" ref="ve_chart_template_amd"/>
+            <field name="name">Exento (ventas)</field>
+            <field name="description">Exento (ventas)</field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="tax_group_iva_0"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+        </record>
+    </data>
 </odoo>
